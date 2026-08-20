@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X Residance | Kiralık Daireler</title>
+<meta name="description" content="X Residance - Kiralık Daireler. Çok yakında burada.">
+<style>
+  :root {
+    --bg: #0f1115;
+    --bg-alt: #161923;
+    --accent: #c9a24b;
+    --text: #f5f3ee;
+    --text-muted: #a7abb5;
+    --border: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: radial-gradient(circle at 50% 0%, var(--bg-alt), var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+    text-align: center;
+  }
+  .brand {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .brand span {
+    color: var(--accent);
+  }
+  .tagline {
+    margin: 10px 0 0;
+    color: var(--text-muted);
+    font-size: clamp(0.95rem, 3vw, 1.15rem);
+    letter-spacing: 0.04em;
+  }
+  .divider {
+    width: 56px;
+    height: 2px;
+    background: var(--accent);
+    margin: 28px 0;
+    border: none;
+  }
+  .coming-soon {
+    font-size: clamp(1.3rem, 5vw, 1.9rem);
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  .coming-soon-sub {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 40px;
+    max-width: 420px;
+  }
+
+  /* ==== VIDEO ALANI: Video eklemek için bu bloğu kullan ====
+     Video hazır olduğunda aşağıdaki .video-placeholder div'ini
+     bir <video> etiketi veya YouTube/Vimeo <iframe> ile değiştir. */
+  .video-placeholder {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 16 / 9;
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 40px;
+    background: rgba(255,255,255,0.02);
+  }
+  /* ==== VIDEO ALANI SONU ==== */
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px 28px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    min-width: 260px;
+  }
+  .contact-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin: 0;
+  }
+  .contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+  .contact-row svg { flex-shrink: 0; }
+  .contact a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+  .contact a:hover { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="brand">X <span>Residance</span></h1>
+    <p class="tagline">Kiralık Daireler</p>
+
+    <hr class="divider">
+
+    <p class="coming-soon">Çok Yakında</p>
+    <p class="coming-soon-sub">Sitemiz ve tanıtım videomuz yakında burada olacak.</p>
+
+    <div class="video-placeholder">Video yakında eklenecek</div>
+
+    <div class="contact">
+      <p class="contact-name">Batuhan Sönmez</p>
+      <a class="contact-row" href="tel:+905449444108">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0544 944 4108
+      </a>
+      <a class="contact-row" href="https://instagram.com/batusonmezz" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+        @batusonmezz
+      </a>
+    </div>
+
+    <footer>X Residance</footer>
+  </div>
+</body>
+</html>
