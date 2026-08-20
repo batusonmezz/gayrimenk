@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>X Residance | Kiralık Daireler</title>
-<meta name="description" content="X Residance - Kiralık Daireler. Çok yakında burada.">
+<title>Gayrimenk | Kiralık Daireler</title>
+<meta name="description" content="Gayrimenk - Kiralık Daireler. Çok yakında burada.">
 <style>
   :root {
     --bg: #0f1115;
@@ -122,11 +122,30 @@
     font-size: 0.75rem;
     opacity: 0.6;
   }
+
+  .corner-photo {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    width: 150px;
+    border-radius: 14px;
+    border: 2px solid var(--accent);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+    z-index: 10;
+  }
+  @media (max-width: 640px) {
+    .corner-photo {
+      width: 96px;
+      left: 12px;
+      bottom: 12px;
+      border-radius: 10px;
+    }
+  }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <h1 class="brand">X <span>Residance</span></h1>
+    <h1 class="brand"><span>Gayrimenk</span></h1>
     <p class="tagline">Kiralık Daireler</p>
 
     <hr class="divider">
@@ -148,7 +167,9 @@
       </a>
     </div>
 
-    <footer>X Residance</footer>
+    <footer>Gayrimenk</footer>
   </div>
+
+  <img class="corner-photo" src="batuhan.jpg" alt="Batuhan Sönmez">
 </body>
 </html>
