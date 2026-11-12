@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>X Residance | Kiralık Daireler</title>
-<meta name="description" content="X Residance - Kiralık Daireler. Çok yakında burada.">
+<meta name="description" content="X Residance – Kocaeli Kartepe Emekevler'de kiralık 1+1 daireler. Tanıtım videosu ve iletişim bilgileri.">
 <style>
   :root {
     --bg: #0f1115;
@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    background: radial-gradient(circle at 50% 0%, var(--bg-alt), var(--bg) 60%);
+    background: var(--bg) radial-gradient(circle at 50% 0%, var(--bg-alt), var(--bg) 60%) no-repeat;
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
@@ -55,18 +55,6 @@
     margin: 28px 0;
     border: none;
   }
-  .coming-soon {
-    font-size: clamp(1.3rem, 5vw, 1.9rem);
-    font-weight: 600;
-    margin: 0 0 8px;
-  }
-  .coming-soon-sub {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin: 0 0 40px;
-    max-width: 420px;
-  }
-
   .description {
     max-width: 560px;
     margin: 0 0 40px;
@@ -89,22 +77,22 @@
     margin: 0;
   }
 
-  /* ==== VIDEO ALANI: Video eklemek için bu bloğu kullan ====
-     Video hazır olduğunda aşağıdaki .video-placeholder div'ini
-     bir <video> etiketi veya YouTube/Vimeo <iframe> ile değiştir. */
-  .video-placeholder {
+  /* ==== VIDEO ALANI (YouTube) ==== */
+  .video {
     width: 100%;
-    max-width: 480px;
+    max-width: 560px;
     aspect-ratio: 16 / 9;
-    border: 1px dashed var(--border);
+    border: 1px solid var(--border);
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    font-size: 0.85rem;
+    overflow: hidden;
+    background: #000;
     margin-bottom: 40px;
-    background: rgba(255,255,255,0.02);
+  }
+  .video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
   /* ==== VIDEO ALANI SONU ==== */
 
@@ -153,15 +141,19 @@
 
     <hr class="divider">
 
-    <p class="coming-soon">Çok Yakında</p>
-    <p class="coming-soon-sub">Sitemiz ve tanıtım videomuz yakında burada olacak.</p>
-
     <div class="description">
-      <p class="description-title">Kartepe'nin En Prestijli Lokasyonu Emekevler X Rezidans'ta Çift Balkonlu, Yerden Isıtmalı Kiralık 1+1!</p>
-      <p class="description-text">Kartepe Emekevler Mahallesi'nin tam merkezinde yer alan, tamamı 1+1 konseptli ve toplam 108 daireden oluşan seçkin X Rezidans projesinde konforlu ve güvenli bir yaşam sizleri bekliyor.</p>
+      <p class="description-title">Kocaeli Kartepe Emekevler'deki X Rezidans'ta Çift Balkonlu, Yerden Isıtmalı Kiralık 1+1!</p>
+      <p class="description-text">Kartepe Emekevler Mahallesi'nin tam merkezinde yer alan, tamamı 1+1 konseptli ve toplam 105 daireden oluşan seçkin X Rezidans projesinde konforlu ve güvenli bir yaşam sizleri bekliyor.</p>
     </div>
 
-    <div class="video-placeholder">Video yakında eklenecek</div>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/7F8hpnhbtxo?rel=0"
+        title="X Rezidans | Kocaeli Kartepe'de Havuzlu Sitede Kiralık 1+1 Daireler"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        loading="lazy"
+        allowfullscreen></iframe>
+    </div>
 
     <div class="contact">
       <p class="contact-name">Batuhan Sönmez</p>
